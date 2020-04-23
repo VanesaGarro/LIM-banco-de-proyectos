@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import GetCollection from '../controller/GetCollection';
+import Menu from '../components/Menu';
 
 const Home = () => {
   const [dataCollection, setDataCollecion] = useState([]);
@@ -12,10 +13,10 @@ const Home = () => {
   console.log(dataCollection);
   return (
     <>
-      <h1> hola</h1>
-      <div>
+      <Menu />
+      <div className="container-cards">
         {dataCollection.map((res) => (
-          <img src={res.urls.thumb} alt="collection" />
+          <img src={res.urls.thumb} alt="collection" className="card-image" />
         ))}
       </div>
     </>

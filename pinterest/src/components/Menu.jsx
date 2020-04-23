@@ -1,32 +1,34 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Menu.css';
+import logo from '../assets/images/pinterest.svg';
 // import PropTypes from 'prop-types';
 
 const Menu = (
 ) => (
-    <ul className="nav-header">
-    <li>
+  <nav className="nav-header">
 
-      <p className="title-header">
-        <img src={burger} alt="logo" className="logo-header" />
-        <span className="title-header initials-header">B</span>
-        urger
-        {' '}
-        <span className="title-header initials-header">Q</span>
-        ueen
-      </p>
+    <li>
+      <img src={logo} alt="logo" className="logo-header" />
     </li>
-    <Link to="/Home">
-      <li className="li-header" id="productos">Productos</li>
-    </Link>
-    <Link to="/OrdersKitchen">
-      <li className="li-header" id="cocina">Cocina </li>
-    </Link>
-    <Link to="/OrdersKitchen">
-      <li className="li-header" id="mesero">Mesero </li>
-    </Link>
-    </ul>
+    <li>
+      <button type="submit" className="button-inicio">
+        {' '}
+        Inicio
+      </button>
+    </li>
+
+    <div className="search">
+      <form action="#">
+        <input
+          type="text"
+          placeholder="Buscar"
+          name="search"
+        />
+      </form>
+    </div>
+
+  </nav>
 );
 
 export default Menu;
