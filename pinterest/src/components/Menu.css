@@ -33,6 +33,7 @@
         padding: 12px; 
         text-decoration: none; 
         font-size: 15px; 
+        margin-left: 10px;
       
   }
   nav li:hover { 
@@ -97,11 +98,10 @@
     flex-direction: column;
     flex-wrap: wrap;
     max-height: 2500px;
+    align-content: center;
   }
   .card-image{
     border-radius: 5%;
-    margin:10px;
-    width: 18.5%;
-   
-   
+    width: 18.5%; 
+    margin:6px; 
   }
