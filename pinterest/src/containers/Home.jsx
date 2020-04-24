@@ -14,11 +14,11 @@ const Home = () => {
   return (
     <>
       <Menu />
-      <div className="container-cards">
-        {dataCollection.map((res) => (
-          <img src={res.urls.thumb} alt="collection" className="card-image" />
-        ))}
-      </div>
+        <div className="container-cards">
+          {dataCollection.map((res) => (
+            <img src={res.urls.small} alt="collection" className="card-image" />
+          ))}
+        </div>
     </>
   );
 };

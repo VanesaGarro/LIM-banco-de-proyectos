@@ -11,7 +11,9 @@
     width: 100%;
     display: flex;
     align-items: center;
-    padding: 14px 14px;
+    padding: 10px 0px;
+    position: fixed;
+    z-index: 10;
   }
   
   ul {
@@ -31,7 +33,7 @@
         padding: 12px; 
         text-decoration: none; 
         font-size: 15px; 
-    
+      
   }
   nav li:hover { 
     background-color: rgba(228, 226, 226, 0.856); 
@@ -90,12 +92,16 @@
     background-color: black;
   }
   .container-cards{
+    padding-top: 5rem;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    align-items: flex-end;
-    justify-content: center;
+    max-height: 2500px;
   }
   .card-image{
-      border-radius: 7%;
-      margin:10px;
+    border-radius: 5%;
+    margin:10px;
+    width: 18.5%;
+   
+   
   }
