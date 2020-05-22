@@ -1,4 +1,4 @@
-*{
+ *{
     font-family: Roboto, sans-serif;
   }
     
@@ -40,6 +40,9 @@
     background-color: rgba(228, 226, 226, 0.856); 
     border-radius: 40%;
     color: black; 
+}
+h4{
+  font-weight: bold;
 }
 .search input[type=text]{ 
     background-image: url(../assets/images/research.svg);
@@ -92,16 +95,41 @@
   button:visited {
     background-color: black;
   }
-  .container-cards{
-    padding-top: 5rem;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    max-height: 2500px;
-    align-content: center;
-  }
   .card-image{
-    border-radius: 5%;
-    width: 17.5%; 
-    margin:4px; 
+  width: 100%;
+  border-radius: 6%;
+  margin-bottom: 10px;
   }
+.container{
+  padding-top: 80px;
+  columns: 6;
+  column-gap:10px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.container .box{
+  width: 100%;
+  margin: 0 0 1px;
+  overflow: hidden;
+  break-inside: avoid;
+}
+.modal-body{
+  display: flex;
+  flex-wrap: wrap;
+}
+.body-img{
+ width: 50%;
+}
+.body-info{
+  width: 50%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.profile_image{
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.container-img {
+  border-radius: 8%;
+}
