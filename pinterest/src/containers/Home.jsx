@@ -1,37 +1,62 @@
-import React, { useState, useEffect } from 'react';
-import GetCollection from '../controller/GetCollection';
+import React, {
+  useState, useEffect,
+} from 'react';
+import InfiniteScroll from 'react-infinite-scroll-component';
 import SearchCollection from '../controller/SearchCollection';
 import Menu from '../components/Menu';
+import PhotoCards from '../components/PhotoCards';
+import '../components/Menu.css';
 
 const Home = () => {
   const [dataCollection, setDataCollecion] = useState([]);
-  const [category, setcategory] = useState([]);
-
-  const getCollection = () => GetCollection().then((res) => (setDataCollecion(res)));
-
-  useEffect(() => {
-    getCollection();
-  }, []);
+  const [category, setcategory] = useState('aesthetic');
+  const [pageNumber, setPageNumber] = useState(1);
+  const [page, setPage] = useState(2);
   const getCategory = (e) => {
     setcategory(e.target.value);
   };
+  const search = () => SearchCollection(pageNumber, category).then((res) => (setDataCollecion(res.results)));
+  useEffect(() => {
+    search();
+  }, [category]);
+
+  const viewMore = () => SearchCollection(page, category).then((res) => { setPage(page + 1); setDataCollecion((prev) => [...new Set([...prev, ...res.results])]); });
+
+  console.log(dataCollection);
   console.log(category);
-  const search = () => SearchCollection(category).then((res) => (setDataCollecion(res.results)));
-  const viewCollection = () => dataCollection.map((res) => (
-    <img src={res.urls.small} alt="collection" className="card-image" />
-  ));
   return (
     <>
+
       <Menu
-        getCollection={getCollection}
+        setDataCollecion={setDataCollecion}
         search={search}
         getCategory={getCategory}
-        category={category}
+        setcategory={setcategory}
+        setPageNumber={setPageNumber}
       />
+      <div className="container">
 
-      <div className="container-cards">
-        {viewCollection()}
+        <InfiniteScroll
+          dataLength={dataCollection.length}
+          hasMore
+          next={viewMore}
+        />
+        {dataCollection.map((res) => (
+          <PhotoCards
+            photo={res.urls.small}
+            username={res.user.username}
+            profile_image={res.user.profile_image.small}
+            description={res.description}
+            imgDownload={res.links.download}
+            alt_description={res.alt_description}
+            likes={res.likes}
+          />
+        ))}
+
+
       </div>
+
+      <div />
 
     </>
   );
