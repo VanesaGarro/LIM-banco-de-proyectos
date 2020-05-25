@@ -34,7 +34,7 @@ const Home = () => {
         setcategory={setcategory}
         setPageNumber={setPageNumber}
       />
-      <div className="container">
+      <div className="container-collection">
 
         <InfiniteScroll
           dataLength={dataCollection.length}

@@ -100,16 +100,16 @@ h4{
   border-radius: 6%;
   margin-bottom: 10px;
   }
-.container{
+.container-collection{
+ 
   padding-top: 80px;
   columns: 6;
   column-gap:10px;
   padding-right: 10px;
   padding-left: 10px;
 }
-.container .box{
+.container-collection .box{
   width: 100%;
-  margin: 0 0 1px;
   overflow: hidden;
   break-inside: avoid;
 }
@@ -131,5 +131,5 @@ h4{
   margin-right: 5px;
 }
 .container-img {
-  border-radius: 8%;
+  border-radius: 5%;
 }
