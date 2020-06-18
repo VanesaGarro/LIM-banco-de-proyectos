@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "89190a4e2c4f0d915a550e86b0998bd8",
+    "revision": "9e1ba21e4d9ba94e6877b55140007d22",
     "url": "/LIM-banco-de-proyectos/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/LIM-banco-de-proyectos/static/css/2.9de105d4.chunk.css"
   },
   {
-    "revision": "04a5a40e34e09fd53317",
+    "revision": "d06430c1c9fdf3cab1fc",
     "url": "/LIM-banco-de-proyectos/static/css/main.610f77c8.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/LIM-banco-de-proyectos/static/js/2.ef025648.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "04a5a40e34e09fd53317",
-    "url": "/LIM-banco-de-proyectos/static/js/main.544ac799.chunk.js"
+    "revision": "d06430c1c9fdf3cab1fc",
+    "url": "/LIM-banco-de-proyectos/static/js/main.9974cd60.chunk.js"
   },
   {
     "revision": "919f1646fb8077801ae4",
