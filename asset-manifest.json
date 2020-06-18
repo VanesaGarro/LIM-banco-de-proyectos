@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/LIM-banco-de-proyectos/static/css/main.610f77c8.chunk.css",
+    "main.js": "/LIM-banco-de-proyectos/static/js/main.544ac799.chunk.js",
+    "main.js.map": "/LIM-banco-de-proyectos/static/js/main.544ac799.chunk.js.map",
+    "runtime-main.js": "/LIM-banco-de-proyectos/static/js/runtime-main.7a83856d.js",
+    "runtime-main.js.map": "/LIM-banco-de-proyectos/static/js/runtime-main.7a83856d.js.map",
+    "static/css/2.9de105d4.chunk.css": "/LIM-banco-de-proyectos/static/css/2.9de105d4.chunk.css",
+    "static/js/2.ef025648.chunk.js": "/LIM-banco-de-proyectos/static/js/2.ef025648.chunk.js",
+    "static/js/2.ef025648.chunk.js.map": "/LIM-banco-de-proyectos/static/js/2.ef025648.chunk.js.map",
+    "index.html": "/LIM-banco-de-proyectos/index.html",
+    "precache-manifest.c105297b539c5c92fa96641fbf11c9c4.js": "/LIM-banco-de-proyectos/precache-manifest.c105297b539c5c92fa96641fbf11c9c4.js",
+    "service-worker.js": "/LIM-banco-de-proyectos/service-worker.js",
+    "static/css/2.9de105d4.chunk.css.map": "/LIM-banco-de-proyectos/static/css/2.9de105d4.chunk.css.map",
+    "static/css/main.610f77c8.chunk.css.map": "/LIM-banco-de-proyectos/static/css/main.610f77c8.chunk.css.map",
+    "static/js/2.ef025648.chunk.js.LICENSE.txt": "/LIM-banco-de-proyectos/static/js/2.ef025648.chunk.js.LICENSE.txt",
+    "static/media/Menu.css": "/LIM-banco-de-proyectos/static/media/research.633a75e3.svg",
+    "static/media/download.svg": "/LIM-banco-de-proyectos/static/media/download.3f145989.svg",
+    "static/media/heart.svg": "/LIM-banco-de-proyectos/static/media/heart.2d6e1dd6.svg",
+    "static/media/pinterest.svg": "/LIM-banco-de-proyectos/static/media/pinterest.098da3c0.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7a83856d.js",
+    "static/css/2.9de105d4.chunk.css",
+    "static/js/2.ef025648.chunk.js",
+    "static/css/main.610f77c8.chunk.css",
+    "static/js/main.544ac799.chunk.js"
+  ]
+}
