@@ -1,11 +1,11 @@
 import React from 'react';
 // import { Link } from 'react-router-dom';
 import './Menu.css';
+import PropTypes from 'prop-types';
 import logo from '../assets/images/pinterest.svg';
-// import PropTypes from 'prop-types';
 
 const Menu = ({
-  search, getCategory, setcategory,
+  search, getCategory, setcategory, setDataCollecion,
 }) => (
   <nav className="nav-header">
 
@@ -18,6 +18,7 @@ const Menu = ({
         className="button-inicio"
         onClick={() => {
           setcategory('aesthetic');
+          search();
           document.getElementById('searchbar').value = '';
         }}
       >
@@ -44,5 +45,9 @@ const Menu = ({
 
   </nav>
 );
-
+Menu.propTypes = {
+  search: PropTypes.func.isRequired,
+  getCategory: PropTypes.func.isRequired,
+  setcategory: PropTypes.func.isRequired,
+};
 export default Menu;

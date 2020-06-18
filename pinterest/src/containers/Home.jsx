@@ -15,15 +15,19 @@ const Home = () => {
   const getCategory = (e) => {
     setcategory(e.target.value);
   };
-  const search = () => SearchCollection(pageNumber, category).then((res) => (setDataCollecion(res.results)));
+  const search = () => SearchCollection(pageNumber, category)
+    .then((res) => (setDataCollecion(res.results)));
   useEffect(() => {
     search();
-  }, [category]);
+  }, []);
 
-  const viewMore = () => SearchCollection(page, category).then((res) => { setPage(page + 1); setDataCollecion((prev) => [...new Set([...prev, ...res.results])]); });
-
-  console.log(dataCollection);
+  const viewMore = () => SearchCollection(page, category)
+    .then((res) => {
+      setPage(page + 1);
+      setDataCollecion((prev) => [...new Set([...prev, ...res.results])]);
+    });
   console.log(category);
+  console.log(dataCollection);
   return (
     <>
 
@@ -43,12 +47,13 @@ const Home = () => {
         />
         {dataCollection.map((res) => (
           <PhotoCards
+            key={res.id}
             photo={res.urls.small}
             username={res.user.username}
-            profile_image={res.user.profile_image.small}
+            profileImage={res.user.profile_image.small}
             description={res.description}
             imgDownload={res.links.download}
-            alt_description={res.alt_description}
+            altDescription={res.alt_description}
             likes={res.likes}
           />
         ))}

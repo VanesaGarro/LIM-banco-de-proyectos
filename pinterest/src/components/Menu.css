@@ -1,5 +1,9 @@
+@font-face {
+  font-family: 'SegoeUIBold';
+  src: local('SegoeUIBold'), url(../assets/fonts/Segoe\ UI\ Bold.ttf) format('truetype');
+}
  *{
-    font-family: Roboto, sans-serif;
+    font-family: 'Segoe UI';
   }
     
   body {
@@ -41,9 +45,6 @@
     border-radius: 40%;
     color: black; 
 }
-h4{
-  font-weight: bold;
-}
 .search input[type=text]{ 
     background-image: url(../assets/images/research.svg);
     background-size: 1.5%;
@@ -79,8 +80,8 @@ h4{
     text-decoration:none;
   }
   
-  li a.active {
-    color: white;
+  li .button-inicio:visited {
+    background-color: rgb(12, 9, 9);
   }
   
   .logo-header{
@@ -116,12 +117,15 @@ h4{
 .modal-body{
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
 }
+
 .body-img{
- width: 50%;
+ width: 45%;
 }
 .body-info{
-  width: 50%;
+  width: 55%;
   align-items: center;
   text-align: center;
   justify-content: center;
@@ -132,4 +136,23 @@ h4{
 }
 .container-img {
   border-radius: 5%;
+}
+.logo-heart{
+  width: 7%;
+  margin-right: 9px;
+}
+.logo-dwn{
+  width:50px;
+  height:20px;
+}
+.footer {
+  height: 4rem;
+  background-color: #e2e2e2;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 360px;
+  padding: 1rem;
+  background-color: #efefef15;
+  text-align: center;
 }
