@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import logo from '../assets/images/pinterest.svg';
 
 const Menu = ({
-  search, getCategory, setcategory, setDataCollecion,
+  search, getCategory, setcategory,
 }) => (
   <nav className="nav-header">
 
