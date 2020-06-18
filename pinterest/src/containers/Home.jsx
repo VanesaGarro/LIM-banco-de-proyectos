@@ -26,8 +26,6 @@ const Home = () => {
       setPage(page + 1);
       setDataCollecion((prev) => [...new Set([...prev, ...res.results])]);
     });
-  console.log(category);
-  console.log(dataCollection);
   return (
     <>
 

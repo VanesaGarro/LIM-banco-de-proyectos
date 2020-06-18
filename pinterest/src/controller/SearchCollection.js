@@ -6,7 +6,6 @@ const SearchCollection = (page, query) => fetch(`https://api.unsplash.com/search
   },
 }).then((res) => {
   if (res.status === 200) {
-    console.log(query);
     return res.json();
   }
   return Promise.reject(console.log(res));
